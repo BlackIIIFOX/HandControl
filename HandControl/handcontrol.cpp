@@ -6,6 +6,8 @@ HandControl::HandControl(QWidget *parent) :
     ui(new Ui::HandControl)
 {
     ui->setupUi(this);
+
+
 }
 
 HandControl::~HandControl()

@@ -34,7 +34,8 @@ SOURCES += \
     HandControlModel/DataConnector/idataconnectror.cpp \
     HandControlModel/DataConnector/FileSystemConnector/filejsonconnector.cpp \
     HandControlModel/DataConnector/DeviceConnector/deviceconnector.cpp \
-    HandControlModel/DataConnector/FileSystemConnector/ifilesystemconnector.cpp
+    HandControlModel/DataConnector/FileSystemConnector/ifilesystemconnector.cpp \
+    HandControlModel/HandCommand/ActionHandControl/reposytoriactions.cpp
 
 HEADERS += \
         handcontrol.h \
@@ -47,7 +48,8 @@ HEADERS += \
     HandControlModel/DataConnector/idataconnectror.h \
     HandControlModel/DataConnector/FileSystemConnector/filejsonconnector.h \
     HandControlModel/DataConnector/DeviceConnector/deviceconnector.h \
-    HandControlModel/DataConnector/FileSystemConnector/ifilesystemconnector.h
+    HandControlModel/DataConnector/FileSystemConnector/ifilesystemconnector.h \
+    HandControlModel/HandCommand/ActionHandControl/reposytoriactions.h
 
 FORMS += \
         handcontrol.ui

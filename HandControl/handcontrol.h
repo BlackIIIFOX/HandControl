@@ -2,6 +2,7 @@
 #define HANDCONTROL_H
 
 #include <QMainWindow>
+#include <HandControlModel/handcontrolmodel.h>
 
 namespace Ui {
 class HandControl;
@@ -17,6 +18,7 @@ public:
 
 private:
     Ui::HandControl *ui;
+    HandControlModel model_new;
 };
 
 #endif // HANDCONTROL_H

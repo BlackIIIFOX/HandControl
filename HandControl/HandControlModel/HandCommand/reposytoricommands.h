@@ -2,16 +2,21 @@
 #define REPOSYTORICOMMANDS_H
 
 #include <QObject>
+#include <HandControlModel/HandCommand/handcommand.h>
 
-class ReposytoriCommands : public QObject
+class ReposytoriCommands
 {
-    Q_OBJECT
 public:
-    explicit ReposytoriCommands(QObject *parent = nullptr);
+    ReposytoriCommands();
+    bool append_command(HandCommand new_command);
+    bool delete_command(QString name_command);
+    QStringList get_names_commands();
+    HandCommand get_command(QString name_command);
 
-signals:
+private:
+    QList<HandCommand> list_command;
+    QStringList names_list_commands;
 
-public slots:
 };
 
 #endif // REPOSYTORICOMMANDS_H

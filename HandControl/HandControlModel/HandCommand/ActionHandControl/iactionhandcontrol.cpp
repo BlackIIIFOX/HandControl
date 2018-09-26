@@ -1,6 +1,6 @@
 #include "iactionhandcontrol.h"
 
-IActionHandControl::IActionHandControl(QObject *parent) : QObject(parent)
-{
 
+IActionHandControl::~IActionHandControl()
+{
 }

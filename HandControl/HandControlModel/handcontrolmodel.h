@@ -2,6 +2,8 @@
 #define HANDCONTROLMODEL_H
 
 #include <QObject>
+#include <HandControlModel/HandCommand/reposytoricommands.h>
+#include <HandControlModel/DataConnector/FileSystemConnector/ifilesystemconnector.h>
 
 class HandControlModel : public QObject
 {
@@ -12,6 +14,14 @@ public:
 signals:
 
 public slots:
+
+
+private:
+    ReposytoriCommands commands;
+    IFileSystemConnector* connector;
+
+    ReposytoriCommands load_commands(IFileSystemConnector* connector);
+
 };
 
 #endif // HANDCONTROLMODEL_H
